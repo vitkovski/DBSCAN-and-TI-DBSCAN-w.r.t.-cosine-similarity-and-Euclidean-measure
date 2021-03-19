@@ -1,2 +1,8 @@
-# DBSCAN-and-TI-DBSCAN-w.r.t.-cosine-similarity-and-Euclidean-measure
-DBSCAN+ and TI-DBSCAN+ w.r.t. cosine similarity and Euclidean measure
+# DBSCAN+ w.r.t. cosine similarity, DBSCAN+ & TI-DBSCAN+ w.r.t. Euclidean on normalized vectors
+
+The aim of this project was to implement 3 different algorithms - DBSCAN+ w.r.t. cosine similarity, DBSCAN+ & TI-DBSCAN+ w.r.t. Euclidean on normalized vectors in Python and in C-like language and compare the results. The “plus” (+) version modifies the classical one by assigning border points to possibly many clusters and not to the first one as is the case of the classical DBSCAN algorithm. TI-DBSCAN version uses the triangle inequality property (TI) that reduces the number of potential candidates to be members of epsilon-neighborhood of a given point. The results of TI-DBSCAN and DBSCAN are the same, but the first version is much faster. We tested our implementations of the algorithms on 5 different datasets:
+• Dataset A. my_test0.csv - our 2D test dataset with 8 elements to check if Plus version is working properly
+• Dataset B. my_test1.csv - our 2D dataset with 450 elements, on which it is easy to see how cosine similarity works and it also includes cluster of 4 elements that is built of 3 border points of another cluster
+• Dataset C. complex9.csv - artificial 2D dataset with 3031 elements from https://github.com/deric/clustering-benchmark/blob/master/src/main/resources/datasets/artificial/complex9.arff (converted from .arff to .csv file)
+• Dataset D. cluto-t7-10k.csv - artificial 2D dataset with 10'000 elements from https://github.com/deric/clustering-benchmark/blob/master/src/main/resources/datasets/artificial/cluto-t7-10k.arff (converted from .arff to .csv file and “noise” labels changed to “-1”)
+• Dataset E. letter.csv - artificial 16D dataset with 20'000 elements from https://github.com/deric/clustering-benchmark/blob/master/src/main/resources/datasets/real-world/letter.arff (converted from .arff to .csv file and labels changed from A-Z to 1-26 numbers respectively)
