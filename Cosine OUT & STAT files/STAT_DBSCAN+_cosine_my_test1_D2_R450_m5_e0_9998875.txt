@@ -1,0 +1,19 @@
+Name of the input file	my_test1.csv
+Number of dimensions of a point	2
+Number of points in the input file	450
+Eps	0.9998875
+MinPts	5
+Runtime of reading the INPUT	0.003021717071533203
+Runtime of clustering	0.7978296279907227
+Runtime of writing to OUT	0.003988742828369141
+Total runtime	0.8228292465209961
+Number of discovered clusters	4
+Number of discovered noise points	27
+Number of discovered core points	420
+Number of discovered border points	3
+Average number of calculations of cos_sim	450.0
+Average number of clusters to which border points are assigned	1.0
+Rand's TP	27473.0
+Rand's TN	73318.0
+Rand's number of points pairs	101025.0
+Rand's index	0.9976837416481069
