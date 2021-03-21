@@ -1,0 +1,23 @@
+Name of the input file	complex9.csv
+Number of dimensions of a point	2
+Number of points in the input file	3031
+Eps	0.002
+MinPts	4
+Reference point r	[1, 1]
+Runtime of reading the INPUT	0.0039899349212646484
+Runtime of calculating distances to ref	0.009972810745239258
+Runtime of normalization	0.0
+Runtime of sorting	0.001360177993774414
+Runtime of clustering	12.515694379806519
+Runtime of writing to OUT	0.02390909194946289
+Total runtime	23.505197525024414
+Number of discovered clusters	68
+Number of discovered noise points	82
+Number of discovered core points	2879
+Number of discovered border points	70
+Average number of calculations of eucl_distance (without calc to ref)	42.67106565489937
+Average number of clusters to which border points are assigned	1.0857142857142856
+Rand's TP	158131.0
+Rand's TN	3394931.0
+Rand's number of points pairs	4591965.0
+Rand's index	0.7737563330730961

@@ -1,0 +1,23 @@
+Name of the input file	my_test1.csv
+Number of dimensions of a point	2
+Number of points in the input file	450
+Eps	0.015
+MinPts	4
+Reference point r	[1, 1]
+Runtime of reading the INPUT	0.003991127014160156
+Runtime of calculating distances to ref	0.0009958744049072266
+Runtime of normalization	0.0009968280792236328
+Runtime of sorting	0.0
+Runtime of clustering	0.3271634578704834
+Runtime of writing to OUT	0.005959272384643555
+Total runtime	0.5497674942016602
+Number of discovered clusters	5
+Number of discovered noise points	23
+Number of discovered core points	424
+Number of discovered border points	3
+Average number of calculations of eucl_distance (without calc to ref)	55.035555555555554
+Average number of clusters to which border points are assigned	1.3333333333333333
+Rand's TP	27473.0
+Rand's TN	73251.0
+Rand's number of points pairs	101025.0
+Rand's index	0.9970205394704281

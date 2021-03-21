@@ -1,0 +1,23 @@
+Name of the input file	cluto-t7-10k.csv
+Number of dimensions of a point	2
+Number of points in the input file	10000
+Eps	0.001
+MinPts	4
+Reference point r	[0, 1]
+Runtime of reading the INPUT	0.07470583915710449
+Runtime of calculating distances to ref	0.0388948917388916
+Runtime of normalization	0.003989458084106445
+Runtime of sorting	0.003989696502685547
+Runtime of clustering	275.3715932369232
+Runtime of writing to OUT	0.07237672805786133
+Total runtime	460.2149758338928
+Number of discovered clusters	64
+Number of discovered noise points	71
+Number of discovered core points	9878
+Number of discovered border points	51
+Average number of calculations of eucl_distance (without calc to ref)	19.6064
+Average number of clusters to which border points are assigned	1.0980392156862746
+Rand's TP	3378359.0
+Rand's TN	28933592.0
+Rand's number of points pairs	49995000.0
+Rand's index	0.6463036503650365
