@@ -1,0 +1,20 @@
+Name of the input file	letter.csv
+Number of dimensions of a point	16
+Number of points in the input file	20000
+Eps	0.25
+MinPts	32
+Runtime of reading the INPUT	0.02292037010192871
+Runtime of normalization	0.001993417739868164
+Runtime of clustering	1994.0495760440826
+Runtime of writing to OUT	0.523205041885376
+Total runtime	1994.9757449626923
+Number of discovered clusters	2
+Number of discovered noise points	1
+Number of discovered core points	19923
+Number of discovered border points	76
+Average number of calculations of eucl_distance	20000.0
+Average number of clusters to which border points are assigned	1.0
+Rand's TP	7660825.0
+Rand's TN	750321.0
+Rand's number of points pairs	199990000.0
+Rand's index	0.04205783289164458
