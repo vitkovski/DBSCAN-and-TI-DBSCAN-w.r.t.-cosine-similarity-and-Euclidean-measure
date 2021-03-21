@@ -214,5 +214,24 @@ Optional - You can also decide if you want to plot the results for 2D data or no
     plt.show()
 ```
 
-## Results
+## Exemplary speed comparison
+
+- Dataset B, Outputs for DBSCAN+ w.r.t. cosine similarity, DBSCAN+ w.r.t. Euclidean distance on normalized vectors and TI-DBSCAN+ w.r.t Euclidean distance on normalized vectors Eps_cosine = 0.9998875, corresponding Eps_euclidean = 0.015, MinPts = 4, reference point for TI version = (1,1), all times in seconds.
+
+![image](https://user-images.githubusercontent.com/69311850/111907608-63bbba80-8a56-11eb-9fbb-cf2abc3f878c.png)
+
+## Conclusions of the project
+
+- In Python version TI-DBSCAN+ algorithm seemed to be faster than its DBSCAN+ counterpart but only on smaller datasets B and C without any or much noise and only when it comes to clustering (total runtime was slower because of some needed data types conversions). For datasets D and E TI-DBSCAN+ was much slower than its DBSCAN+ counterpart. How the data needed to be structured in OUT file for TI-DBSCAN+ (unsorted – meaning that what was needed to do was read the input file, sort it but then also unsort it so it can be see in the same in OUT as in IN) and also all parameters needed for STAT file (especially calculation of Rand index), along with complexity of both these datasets caused TI-DBSCAN+ to be much slower. This can be improved by a better implementation (not using additional nested for loops and additional if-else statements to present the results correctly). 
+
+- All results obtained with three different programs – DBSCAN+ w.r.t. cosine similarity, DBSCAN+ w.r.t. Euclidean distance on normalized vectors and TI - DBSCAN+ w.r.t. Euclidean distance on normalized vectors – if we are talking about clustering results, have a chance to be the same or very close to each other, with the same parameters.
+
+- Rand index seems to be a very good metrics to evaluate the clustering clusters, however, whenever possible, it is best to check how the data is spread graphically – metrics can be reasonably high < 0.6-0.7, giving user the thought that it can be used in other examples but in reality clustering not in proper way (case of DBSCAN+ w.r.t. cosine similarity with i.e. cluto-t7-10k). 
+
+- As a rule of thumb, one may have MinPts parameter set to 2*d, where d is the number of dimensions. However, having MinPts = 2*d + 1, we may remove small datasets that would be created having MinPts = 2*d, although these small datasets should not disturb clustering results in general.
+
+- Choosing epsilon from k-distances plot can be done automatically. Although it is better to check manually values from the ‘elbow’ of the graph. It appears that for higher values of epsilon got from the ‘elbows’ clustering results seems to be a bit better for 2D datasets and in the same time worse for 16D dataset.
+
+- Reference point was chosen in such a way that it had the same value across  dimensions. There might be some differences with clustering results observed changing this value across different dimensions, but rather minor ones, not changing the clustering results significantly, rather improving runtime.
+
 
